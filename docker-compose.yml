@@ -21,8 +21,5 @@ services:
 
   airbyte:
     image: airbyte/airbyte
-    environment:
-      AIRBYTE_API_KEY: ${AIRBYTE_API_KEY}
-      AIRBYTE_ENCRYPTION_KEY: ${AIRBYTE_ENCRYPTION_KEY}
     ports:
       - ${AIRBYTE_HOST_PORT}:8000
